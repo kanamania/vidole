@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package utility;
+import "proto/definition.proto";
+
+service FS{
+ rpc RemoveCache(Message) returns (MessageResponse) {}
+ rpc ResizeImage(Message) returns (MessageResponse) {}
+ rpc CompressImage(Message) returns (MessageResponse) {}
+ rpc CompressArchive(Message) returns (MessageResponse) {}
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package utility;
+import "proto/definition.proto";
+
+service DB{
+ rpc PerformBackup(Message) returns (MessageResponse) {}
+ rpc PerformRestore(Message) returns (MessageResponse) {}
+ rpc PerformReplication(Message) returns (MessageResponse) {}
+}

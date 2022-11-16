@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package utility;
+
+
+message Message{
+ string sender = 1;
+ string tag = 2;
+ string message = 3;
+ string description = 4;
+}
+
+message MessageResponse{
+ string tag = 1;
+ string message = 2;
+ bool status = 3;
+}

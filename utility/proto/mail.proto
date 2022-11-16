@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package utility;
+import "proto/definition.proto";
+
+service MAIL{
+ rpc SendMail(Message) returns (MessageResponse) {}
+ rpc SendCampaign(Message) returns (MessageResponse) {}
+}
